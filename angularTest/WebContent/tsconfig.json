@@ -1,23 +1,19 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "baseUrl": "",
-    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
-    "mapRoot": "./",
-    "module": "System",
+    "lib": [ "es2015", "dom" ],
+    "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "../dist/out-tsc",
+    "noImplicitAny": true,
     "sourceMap": true,
-    "target": "ES5",
-    "typeRoots": [
-      "../node_modules/@types"
-    ],
-    "inlineSourceMap": false,
-    "jsx": "None"
-  }
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5",
+     "outDir": "./app/js/",
+     "rootDir": "./angularTest/WebContent/app"
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
